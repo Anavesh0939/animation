@@ -1,0 +1,31 @@
+body
+{
+    background-color: black;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.spinner
+{
+    width: 500px;
+    height: 500px;
+    border-top: 25px solid red;
+    border-right: 1px solid transparent;
+    border-radius: 50%;
+    margin: auto;
+    animation: spinner 2s linear infinite;
+
+
+}
+.circle
+{   height: 1px;
+    width: 1px;
+    background-color: #1aff00;
+    border-radius: 50%;
+    margin-left: 8.5px;
+    margin-top: 0.5px;
+}
+@keyframes spinner
+{
+    100%{ transform: rotate(360deg)}
+}
